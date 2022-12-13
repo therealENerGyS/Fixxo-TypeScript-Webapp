@@ -1,0 +1,42 @@
+.showcase {
+  background-color: $color-gray-30;
+  ._container {
+    padding: 0;
+    @include center-content();
+    > img {
+      display: none;
+      @include md {
+        padding-top: 5rem;
+        width: 25%;
+        display: block;
+      }
+      @include lg {
+        width: 30%;
+      }
+    }
+    .showcase-text {
+      padding: 2rem 0;
+      @include center-content();
+      flex-direction: column;
+      text-align: center;
+      @include md {
+        padding: 0;
+      }
+      @include lg {
+        width: 50%;
+      }
+      .showcase-header {
+        font-size: $font-size-65;
+        font-weight: $font-weight-extra-bold;
+      }
+      .showcase-p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include lg {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

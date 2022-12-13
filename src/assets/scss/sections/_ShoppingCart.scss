@@ -1,0 +1,84 @@
+.shoppingcart {
+    width: 100% !important;
+
+    .shoppingcart-item {
+        margin: 30px 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .item-image {
+            height: 65px;
+            width: 65px;
+            margin-right: 20px;
+            background-color: $color-background;
+
+            img {
+                height: 65px;
+                width: 65px;
+            }
+        }
+
+        .item-info {
+            flex: 3;
+
+            .item-info-name {
+                font-weight: $font-weight-medium;
+                margin-bottom: 5px;
+                font-size: 1.1rem;
+            }
+
+            .item-info-quantity-box {
+                display: inline-block;
+                border-radius: 5px;
+                font-size: 0.8rem;
+
+                span {
+                    display: inline-block;
+                    height: 25px;
+                    padding: 2px 15px 2px 15px;
+                    border-top: 1px solid $color-gray-30;
+                    border-bottom: 1px solid $color-gray-30;
+                }
+
+                .box-button-left {
+                    height: 25px;
+                    width: 25px;
+                    border: none;
+                    border-radius: 5px 0 0 5px;
+                    border: 1px solid $color-gray-30;
+                    background-color: $color-gray-20;
+                }
+
+                .box-button-right {
+                    height: 25px;
+                    width: 25px;
+                    border: none;
+                    border-radius: 0 5px 5px 0;
+                    border: 1px solid $color-gray-30;
+                    background-color: $color-gray-20;
+                }
+            }
+        }
+        .item-price {
+            flex: 1;
+            text-align: right;
+            font-weight: $font-weight-medium;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+
+            button {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                i {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    @include md {
+        width: 500px !important;
+    }
+}

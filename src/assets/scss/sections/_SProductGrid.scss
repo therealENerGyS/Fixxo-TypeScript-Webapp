@@ -1,0 +1,29 @@
+.product-grid {
+    padding: 2rem 0;
+  ._container {
+    flex-direction: column;
+    .product-h1 {
+      font-size: $font-size-20;
+      font-weight: $font-weight-bold;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 1rem;
+    }
+    .grid {
+      $bs-gutter-y: 0;
+      gap: 1rem;
+      $bs-gutter-x: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: calc(-1 * $bs-gutter-y);
+      margin-right: calc(-0.5 * $bs-gutter-x);
+      margin-left: calc(-0.5 * $bs-gutter-x);
+      flex: 0 0 auto;
+      justify-content: center;
+      width: 100%;
+      @include xl {
+        width: 80%;
+      }
+    }
+  }
+}

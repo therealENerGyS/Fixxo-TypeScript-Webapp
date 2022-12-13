@@ -1,0 +1,93 @@
+.winter-arrivals {
+    padding: 4rem 0 2rem 0;
+    ._container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include lg {
+            flex-direction: row;
+        }
+        .winter-clearance {
+            background-image: url('/src/assets/images/winter-clearance-img.svg');
+            display: flex;
+            width: 100%;
+            height: 560px;
+            .winter-text {
+                padding: 0 2rem;
+                display:flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 80%;
+                @include md {
+                    width: 70%;
+                }
+                @include xl {
+                    width: 60%;
+                }
+                @include xxl {
+                    position: relative;
+                    top: 10%;
+                    left: 5%;
+                }
+    
+                h2 {
+                    font-size: $font-size-45;
+                    font-weight: $font-weight-bold;
+                    width: 95%;
+                    @include md {
+                        
+                        width: 100%;
+                    }
+                }
+                p {
+                    padding-bottom: 2rem;
+                    margin: 0;
+                }
+                button {
+                    padding: 1rem 2rem;
+                    @include xl {
+                        padding: 1rem 3rem;
+                    }
+                }
+            }
+        }
+        .new-arrivals {
+            background-image: url('/src/assets/images/new-arrivals-img.svg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 560px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            @include lg {
+                width: 62%;
+            }
+            .new-arrivals-text {
+                position: relative;
+                top: 12%;
+                left: 5%;
+                padding: 0 1.2rem;
+                background-repeat: no-repeat;
+                display:flex;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 60%;
+                transform: translateY(10%);
+                h2 {
+                    font-size: $font-size-45;
+                    font-weight: $font-weight-bold;
+                    padding-bottom: 1rem;
+                }
+                button {
+                    padding: 1rem 2rem;
+                    @include xxl {
+                        padding: 1rem 3rem;
+                    }
+                }
+            }
+        }
+    }
+}

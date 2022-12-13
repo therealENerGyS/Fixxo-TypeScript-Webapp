@@ -1,0 +1,91 @@
+.two-for-deal-49 {
+  padding: 1rem 0 2rem 0;
+
+  ._container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+
+    @include lg {
+      height: 660px;
+      flex-direction: row;
+      gap: 45px;
+    }
+
+    .grid-two-for {
+      display: flex;
+      column-gap: 2.5rem;
+      justify-content: flex-end;
+      flex-direction: column;
+
+      @include md {
+        height: 100%;
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(100px, 15rem));
+        grid-template-rows: repeat(2, minmax(100px, 1fr));
+        display: grid;
+        padding: 0;
+      }
+
+      @include lg {
+        padding-top: 0;
+      }
+
+      .product {
+        height: 100%;
+
+        .product-info {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+
+          .product-category {
+            color: $color-muted;
+            font-size: $font-size-13;
+          }
+
+          .product-title {
+            font-size: $font-size-16;
+          }
+
+          .price {
+            .discount-price {
+              .current-price {
+                font-size: $font-size-18;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .two-for {
+      @include center-content();
+      padding: 2rem 0;
+      background-color: #bbbbbb;
+      height: 100%;
+      width: 100%;
+      color: $color-white;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 2rem;
+
+      @include lg {
+        margin: 0;
+        margin-bottom: 0;
+        padding: 0;
+      }
+
+      .two-for-header {
+        padding: 0 1rem;
+        font-size: $font-size-45;
+        font-weight: $font-weight-bold;
+
+        @include lg {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

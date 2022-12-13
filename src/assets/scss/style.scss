@@ -1,0 +1,33 @@
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+//Cores
+@import "./core/variables";
+@import "./core/mixins";
+@import "./core/utilities";
+
+//Components
+@import "./components/CProductCard";
+
+//Sections
+@import "./sections/SMainMenu";
+@import "./sections/SFooter";
+@import "./sections/SMainShowcase";
+@import "./sections/SProductGrid";
+@import "./sections/SWinterArrivals";
+@import "./sections/SPamelaConscious";
+@import "./sections/SSpeciality";
+@import "./sections/STwoFor29";
+@import "./sections/STwoFor49";
+@import "./sections/SDiscountBanner";
+@import "./sections/STopProducts";
+@import "./sections/SShoppingBenefits";
+
+@import "./sections/SContactForm";
+@import "./sections/SCurrentPageLocation";
+
+@import "./sections/SProductDiscount";
+
+@import "./sections/ShoppingCart";
+
+@import "./sections/SProductConfig";

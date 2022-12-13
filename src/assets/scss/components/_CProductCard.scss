@@ -1,0 +1,99 @@
+.product {
+  width: 255px;
+  &:hover {
+    .product-img {
+      .product-menu {
+        transform: translateX(0%);
+      }
+      .quick-view-btn {
+        transform: translateY(0%);
+      }
+    }
+  }
+  .product-img {
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+    }
+    .product-menu {
+      font-size: 1rem;
+      list-style: none;
+      z-index: 1;
+      padding-bottom: 0.4rem;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      right: 5px;
+      @include hover {
+        transform: translateX(150%);
+        transition: transform 0.3s ease-in-out;
+      }
+      .menu-link {
+        border-radius: 50%;
+        width: 33px;
+        height: 33px;
+        color: $color-primary;
+        background: $color-white;
+        margin: 0.5rem 0.3rem;
+        text-decoration: none;
+        border: none;
+        @include center-content();
+
+        &:hover {
+          background: $color-primary;
+          color: $color-white;
+          cursor: pointer;
+        }
+        i {
+          @include center-content();
+        }
+      }
+    }
+    .quick-view-btn {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      &:hover {
+        background-color: $color-primary;
+      }
+      @include hover {
+        transform: translateY(150%);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+  }
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .product-category {
+      padding: 0.7rem 0 0 0;
+      font-size: $font-size-13;
+      font-weight: $font-weight-medium;
+    }
+    .product-name {
+      font-size: $font-size-16;
+      font-weight: $font-weight-semi-bold;
+    }
+    .rating {
+      color: $color-secondary;
+    }
+    .price {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: $font-size-18;
+      font-size: $font-size-18;
+      font-weight: $font-weight-semi-bold;
+      margin: 0;
+      padding-left: 0.3rem;
+      text-decoration: none;
+    }
+  }
+}

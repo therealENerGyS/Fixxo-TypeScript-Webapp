@@ -1,0 +1,69 @@
+.contact-form {
+    padding: 2rem 0;
+    @include center-content();
+    ._container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        @include md {
+            width: 95%;
+        }
+        @include lg {
+            width: 85%;
+        }
+        @include xl {
+            width: 75%;
+        }
+        @include xxl {
+            width: 64%;
+        }
+        .contact-header {
+            font-size: $font-size-18;
+            font-weight: $font-weight-bold;
+            margin-bottom: 20px;
+        }
+        form {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            @include md {
+                grid-template-columns: 1fr 1fr;
+            }
+            input {
+                width: 100%;
+                padding: 0.8rem;
+                border: 1px solid $color-gray-40;
+            }
+            .textarea {
+                grid-column: 1 / -1;
+                textarea {
+                    width: 100%;
+                    padding: 0.5rem;
+                    border: 1px solid $color-gray-40;
+                }
+            }
+            button {
+                background-color: $color-secondary;
+                color: $color-white;
+                border: none;
+                margin-top: 1rem;
+                padding: 0.5rem 1rem;
+                width: 100%;
+                @include md {
+                    width: 210px;
+                }
+            }
+            .error {
+                color: $color-secondary;
+                border: 1px solid $color-secondary;
+            }
+            .errorMessage {
+                margin-top: 5px;
+                color: $color-secondary;
+                font-size: 0.8em;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,16 @@
+.product-discount-section {
+    ._container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .discount-link {
+            text-decoration: none;
+
+            .discount-text {
+                color: $color-secondary;
+                font-size: $font-size-16;
+                padding: 2rem 1rem 1rem 1rem;
+            }
+        }
+    }
+}

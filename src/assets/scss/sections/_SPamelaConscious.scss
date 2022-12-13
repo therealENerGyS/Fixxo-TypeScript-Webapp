@@ -1,0 +1,89 @@
+.pamela-conscious-text {
+    font-size: $font-size-45;
+    font-weight: $font-weight-bold;
+    padding-bottom: 1.5rem;
+  }
+
+.pamela-conscious {
+    padding: 2rem 0;
+    ._container {
+        flex-direction: column;
+        @include md {
+          flex-direction: row;
+        }
+        .pamela-div {
+            overflow: hidden;
+            background-image: url("/src/assets/images/pamela-reif-img.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 403px;
+            @include md {
+                margin-right: 0.5rem;
+              }
+              @include lg {
+                width: 50%;
+                margin-right: 1rem;
+              }
+            .pamela-text {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                top: 25%;
+                left: 35%;
+                width: 66%;
+                align-items: flex-start;
+                @include lg {
+                  left: 40%;
+                  width: 60%;
+                }
+                @include xl {
+                  left: 45%;
+                  width: 55%;
+                }
+                @include xxl {
+                  position: relative;
+                  top: 25%;
+                  left: 52%;
+                  width: 48%;
+                }
+            }
+        }
+        .conscious-div {
+            background-image: url("/src/assets/images/conscious-img.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 403px;
+            @include md {
+              margin-left: 0.5rem;
+            }
+            @include lg {
+              width: 50%;
+              margin-left: 1rem;
+            }
+            .conscious-text {
+                padding: 0 2rem;
+                position: relative;
+                top: 25%;
+                left: 0%;
+                width: 70%;
+                @include md {
+                  margin-left: 1rem;
+                  width: 75%;
+                }
+                @include lg {
+                  width: 65%;
+                }
+                @include xl {
+                  width: 55%;
+                }
+                @include xxl {
+                  width: 50%;
+                }
+            }
+        }
+    }
+}

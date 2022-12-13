@@ -1,0 +1,42 @@
+.current-page-location {
+    padding: 0.5rem 0;
+    ._container {
+        padding: 0 2rem;
+        @include center-content();
+        .location-text {
+            list-style: none;
+            padding: 0;
+            color: $color-primary;
+
+            @include md {
+                width: 95%;
+            }
+            @include lg {
+                width: 85%;
+            }
+            @include xl {
+                width: 75%;
+            }
+            @include xxl {
+                width: 64%;
+            }
+            li {
+                display: inline-block;
+                font-weight: $font-weight-medium;
+                color: $color-secondary;
+                a {
+                    text-decoration: none;
+                    color: $color-primary;
+                    &:hover {
+                        color: $color-secondary;
+                    }
+                }
+                & + li:before {
+                    content: "\00a0>\00a0";
+                    font-weight: $font-weight-regular;
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}

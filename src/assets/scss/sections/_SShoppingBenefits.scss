@@ -1,0 +1,40 @@
+.shopping-benefits {
+    ._container {
+        border-top: 1px solid #707070;
+        @include center-content();
+        padding: 3rem 0 0 0;
+        width: 100%;
+        flex-direction: column;
+
+        @include lg {
+            flex-direction: row;
+        }
+
+        .benefits {
+            padding: 1rem .1rem;
+            @include center-content();
+            flex-direction: column;
+            i {
+                @include center-content();
+                font-size: 1.5rem;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                padding: 0.6rem;
+                margin: 0 0.3rem;
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+            }
+
+            .benefits-h2 {
+                font-size: $font-size-20;
+                padding: 2rem 0rem 1rem 0rem;
+            }
+
+            .benefits-p {
+                text-align: center;
+                font-size: $font-size-16;
+                width: 80%;
+            }
+        }
+    }
+}

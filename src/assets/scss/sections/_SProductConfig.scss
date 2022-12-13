@@ -1,0 +1,17 @@
+.product-config {
+    ._container {
+
+        .product-create {
+            display: flex;
+            flex-direction: column;
+        }
+        .product-update {
+            display: flex;
+            flex-direction: column;
+        }
+        .product-delete {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

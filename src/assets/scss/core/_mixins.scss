@@ -1,0 +1,47 @@
+@mixin default-font () {
+    font-size: $font-size-16;
+    font-weight: $font-weight-regular;
+    font-family: $font-poppins;
+}
+@mixin center-content () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//Breakpoints
+@mixin md { // 768px or greater
+    @media (min-width: #{$breakpoint-md}) {
+        @content
+    }
+}
+
+@mixin lg { // 992px or greater
+    @media (min-width: #{$breakpoint-lg}) {
+        @content
+    }
+}
+
+@mixin xl { // 1200px or greater
+    @media (min-width: #{$breakpoint-xl}) {
+        @content
+    }
+}
+
+@mixin xxl { // 1400px or greater
+    @media (min-width: #{$breakpoint-xxl}) {
+        @content
+    }
+}
+
+@mixin xxxl { // 1400px or greater
+    @media (min-width: #{$breakpoint-xxxl}) {
+        @content
+    }
+}
+
+@mixin hover {
+    @media (hover : hover) {
+        @content
+    }
+}
