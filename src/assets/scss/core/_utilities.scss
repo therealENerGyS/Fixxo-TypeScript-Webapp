@@ -1,51 +1,24 @@
 .center-content {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.d-none {
-  display: none;
-}
 .d-flex {
   display: flex;
 }
 
-.j-c-start {
-  justify-content: flex-start;
-}
-.j-c-end {
-  justify-content: flex-end;
-}
-.j-c-center {
-  justify-content: center;
-}
-.j-c-between {
-  justify-content: space-between;
-}
-.j-c-evenly {
-  justify-content: space-evenly;
-}
-
-.a-i-center {
-  align-items: center;
-}
-
 html,
 body {
-  @include default-font();
-
   color: $font-color;
-  padding: 0;
+  @include default-font();
   margin: 0;
+  padding: 0;
 }
 
 ._container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include center-content();
   padding: 0;
-
   @include md {
     padding: 0 1.5rem;
   }
@@ -61,33 +34,31 @@ body {
 }
 
 .btn-theme {
-  
   @include center-content();
-  text-decoration: none;
   border: none;
-  font-weight: $font-weight-semi-bold;
   color: $color-white;
+  font-weight: $font-weight-semi-bold;
   padding: 1rem 3rem;
   position: relative;
-
+  text-decoration: none;
   &::before,
   &::after {
-    position: absolute;
     content: "";
-    width: 20px;
     height: 20px;
+    position: absolute;
+    width: 20px;
   }
   &::before {
-    top: 15%;
-    left: 5%;
     border-left: 2px solid $color-white;
     border-top: 2px solid $color-white;
+    left: 5%;
+    top: 15%;
   }
   &::after {
-    right: 5%;
-    bottom: 15%;
-    border-right: 2px solid $color-white;
     border-bottom: 2px solid $color-white;
+    border-right: 2px solid $color-white;
+    bottom: 15%;
+    right: 5%;
   }
 }
 
@@ -95,12 +66,12 @@ body {
   padding: 0.7rem 3rem;
   width: 100%;
   &::before {
-    top: 17%;
     left: 4%;
+    top: 17%;
   }
   &::after {
-    right: 4%;
     bottom: 17%;
+    right: 4%;
   }
 }
 
@@ -111,14 +82,14 @@ body {
     background-color: $color-white;
     color: $color-primary;
     &::before {
-      top: 15%;
-      left: 5%;
       border-left: 2px solid $color-primary;
       border-top: 2px solid $color-primary;
+      left: 5%;
+      top: 15%;
     }
     &::after {
-      border-right: 2px solid $color-primary;
       border-bottom: 2px solid $color-primary;
+      border-right: 2px solid $color-primary;
     }
   }
 }
@@ -129,18 +100,17 @@ body {
   &:hover {
     background-color: $color-white;
     color: $color-secondary;
-
     &::before {
-      top: 16%;
-      left: 4%;
       border-left: 2px solid $color-secondary;
       border-top: 2px solid $color-secondary;
+      left: 4%;
+      top: 16%;
     }
     &::after {
-      right: 4%;
-      bottom: 16%;
-      border-right: 2px solid $color-secondary;
       border-bottom: 2px solid $color-secondary;
+      border-right: 2px solid $color-secondary;
+      bottom: 16%;
+      right: 4%;
     }
   }
 }
@@ -159,15 +129,15 @@ body {
     }
   }
   &::before {
-    top: 16%;
-    left: 4%;
     border-left: 2px solid $color-primary;
     border-top: 2px solid $color-primary;
+    left: 4%;
+    top: 16%;
   }
   &::after {
-    right: 4%;
-    bottom: 16%;
-    border-right: 2px solid $color-primary;
     border-bottom: 2px solid $color-primary;
+    border-right: 2px solid $color-primary;
+    bottom: 16%;
+    right: 4%;
   }
 }

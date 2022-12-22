@@ -1,7 +1,6 @@
-import React, { createContext, useContext, useState } from "react";
-import CShoppingCart from "../components/CShoppingCart";
-import { Product } from '../models/productModel'
-import { CartItem } from "../models/ShoppingCartModel";
+import React, { createContext, useContext, useState } from "react"
+import CShoppingCart from "../components/CShoppingCart"
+import { CartItem } from "../models/ShoppingCartModel"
 
 interface ShoppingCartProviderType {
     children: any

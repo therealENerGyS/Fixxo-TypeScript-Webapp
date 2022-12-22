@@ -1,5 +1,4 @@
 import React from 'react'
-import { ShoppingCartContextType, useShoppingCartContext } from "../contexts/ShoppingCartContext"
 import { currencyFormatter } from '../utilities/currencyFormatter'
 import { Product } from '../models/productModel'
 
@@ -8,8 +7,6 @@ interface ProductDetailsType {
 }
 
 const SProductDetails: React.FC<ProductDetailsType> = ({item}) => {
-
-  const { increment, decrement } = useShoppingCartContext() as ShoppingCartContextType
 
   return (
     <section className="product-details-section">
@@ -66,9 +63,9 @@ const SProductDetails: React.FC<ProductDetailsType> = ({item}) => {
               <div className="product-qty">
                 <h4>Qty:</h4>
                 <div className="quantity">
-{/*                 <button className="box-button-left" onClick={() => decrement(item)}>-</button>
+                 <button className="box-button-left">-</button>
                   <h5>1</h5>
-                  <button className="box-button-right" onClick={() => increment(item)}>+</button> */}
+                  <button className="box-button-right">+</button>
                 </div>
                 <button type="button">ADD TO CART</button>
               </div>

@@ -1,7 +1,6 @@
-import React from "react";
-import showcase_1 from "../assets/images/header-img-l.svg";
-import showcase_2 from "../assets/images/header-img-r.svg";
-
+import React from "react"
+import showcase_1 from "../assets/images/header-img-l.svg"
+import showcase_2 from "../assets/images/header-img-r.svg"
 
 const SMainShowcase = () => {
   return (
@@ -16,7 +15,7 @@ const SMainShowcase = () => {
         <img src={showcase_2} alt="" />
     </div>
     </section>
-  );
-};
+  )
+}
 
-export default SMainShowcase;
+export default SMainShowcase

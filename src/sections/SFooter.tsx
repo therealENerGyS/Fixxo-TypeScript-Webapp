@@ -1,5 +1,5 @@
 import React from 'react'
-import CExternalLink from '../components/CExternalLink';
+import CExternalLink from '../components/CExternalLink'
 
 const SFooter = () => {
   return (

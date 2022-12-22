@@ -1,8 +1,7 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import CMenuIcon from "../components/CMenuIcon";
-//import CategoriesView from "../views/CategoriesView";
-import { ShoppingCartContextType, useShoppingCartContext } from "../contexts/ShoppingCartContext";
+import React from "react"
+import { NavLink } from "react-router-dom"
+import CMenuIcon from "../components/CMenuIcon"
+import { ShoppingCartContextType, useShoppingCartContext } from "../contexts/ShoppingCartContext"
 
 const SMainMenu: React.FC = () => {
   const { totalQuantity } = useShoppingCartContext() as ShoppingCartContextType
@@ -38,7 +37,7 @@ const SMainMenu: React.FC = () => {
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default SMainMenu;
+export default SMainMenu

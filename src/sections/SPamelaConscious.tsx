@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const SPamelaConscious = () => {
   return (
@@ -22,7 +22,7 @@ const SPamelaConscious = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default SPamelaConscious;
+export default SPamelaConscious

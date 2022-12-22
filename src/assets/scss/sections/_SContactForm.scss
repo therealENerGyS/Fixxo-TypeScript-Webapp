@@ -3,8 +3,8 @@
     @include center-content();
     ._container {
         display: flex;
-        width: 100%;
         flex-direction: column;
+        width: 100%;
         @include md {
             width: 95%;
         }
@@ -23,30 +23,30 @@
             margin-bottom: 20px;
         }
         form {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr;
             gap: 20px;
+            grid-template-columns: 1fr;
+            display: grid;
+            width: 100%;
             @include md {
                 grid-template-columns: 1fr 1fr;
             }
             input {
-                width: 100%;
-                padding: 0.8rem;
                 border: 1px solid $color-gray-40;
+                padding: 0.8rem;
+                width: 100%;
             }
             .textarea {
                 grid-column: 1 / -1;
                 textarea {
-                    width: 100%;
-                    padding: 0.5rem;
                     border: 1px solid $color-gray-40;
+                    padding: 0.5rem;
+                    width: 100%;
                 }
             }
             button {
                 background-color: $color-secondary;
-                color: $color-white;
                 border: none;
+                color: $color-white;
                 margin-top: 1rem;
                 padding: 0.5rem 1rem;
                 width: 100%;
@@ -55,15 +55,14 @@
                 }
             }
             .error {
-                color: $color-secondary;
                 border: 1px solid $color-secondary;
+                color: $color-secondary;
             }
             .errorMessage {
-                margin-top: 5px;
                 color: $color-secondary;
                 font-size: 0.8em;
+                margin-top: 5px;
             }
         }
-
     }
 }

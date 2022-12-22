@@ -1,15 +1,13 @@
 .discount-banner {
     ._container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include center-content();
         .banner {
-            background-color: #23262AAC;
-            width: 100%;
-            height: 20rem;
             @include center-content();
-            flex-direction: column;
+            background-color: #23262AAC;
             color: $color-white;
+            flex-direction: column;
+            height: 20rem;
+            width: 100%;
             @include lg {
                 width: 1110px;
             }

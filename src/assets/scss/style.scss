@@ -10,10 +10,14 @@
 @import "./components/CProductCard";
 
 //Sections
+//General
 @import "./sections/SMainMenu";
+@import "./sections/ShoppingCart";
+@import "./sections/SCurrentPageLocation";
+@import "./sections/SProductGrid"; //Component
 @import "./sections/SFooter";
+//Homepage
 @import "./sections/SMainShowcase";
-@import "./sections/SProductGrid";
 @import "./sections/SWinterArrivals";
 @import "./sections/SPamelaConscious";
 @import "./sections/SSpeciality";
@@ -22,12 +26,7 @@
 @import "./sections/SDiscountBanner";
 @import "./sections/STopProducts";
 @import "./sections/SShoppingBenefits";
-
-@import "./sections/SContactForm";
-@import "./sections/SCurrentPageLocation";
-
+//Products Page
 @import "./sections/SProductDiscount";
-
-@import "./sections/ShoppingCart";
-
-@import "./sections/SProductConfig";
+//Contact Page
+@import "./sections/SContactForm";

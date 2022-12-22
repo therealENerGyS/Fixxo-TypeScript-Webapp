@@ -14,36 +14,35 @@
     overflow: hidden;
     position: relative;
     img {
-      width: 100%;
       height: 210px;
       object-fit: cover;
+      width: 100%;
     }
     .product-menu {
-      font-size: 1rem;
-      list-style: none;
-      z-index: 1;
-      padding-bottom: 0.4rem;
-      margin: 0;
       display: flex;
       flex-direction: column;
+      font-size: 1rem;
+      list-style: none;
+      margin: 0;
+      padding-bottom: 0.4rem;
       position: absolute;
-      top: 0;
       right: 5px;
+      top: 0;
+      z-index: 1;
       @include hover {
         transform: translateX(150%);
         transition: transform 0.3s ease-in-out;
       }
       .menu-link {
-        border-radius: 50%;
-        width: 33px;
-        height: 33px;
-        color: $color-primary;
+        @include center-content();
         background: $color-white;
+        border: none;
+        border-radius: $border-radius-rounded;
+        color: $color-primary;
+        height: 33px;
         margin: 0.5rem 0.3rem;
         text-decoration: none;
-        border: none;
-        @include center-content();
-
+        width: 33px;
         &:hover {
           background: $color-primary;
           color: $color-white;
@@ -55,9 +54,9 @@
       }
     }
     .quick-view-btn {
-      position: absolute;
       bottom: 0;
       left: 0;
+      position: absolute;
       &:hover {
         background-color: $color-primary;
       }
@@ -68,14 +67,14 @@
     }
   }
   .product-info {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     .product-category {
-      padding: 0.7rem 0 0 0;
       font-size: $font-size-13;
       font-weight: $font-weight-medium;
+      padding: 0.7rem 0 0 0;
     }
     .product-name {
       font-size: $font-size-16;
@@ -86,13 +85,12 @@
     }
     .price {
       display: flex;
-      justify-content: center;
-      text-align: center;
-      font-size: $font-size-18;
       font-size: $font-size-18;
       font-weight: $font-weight-semi-bold;
+      justify-content: center;
       margin: 0;
       padding-left: 0.3rem;
+      text-align: center;
       text-decoration: none;
     }
   }

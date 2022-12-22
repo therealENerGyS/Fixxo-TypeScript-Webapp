@@ -1,5 +1,5 @@
-import React from "react";
-import CSpeciality from "../components/CSpeciality";
+import React from "react"
+import CSpeciality from "../components/CSpeciality"
 
 const SSpeciality = () => {
   return (
@@ -15,7 +15,7 @@ const SSpeciality = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default SSpeciality;
+export default SSpeciality

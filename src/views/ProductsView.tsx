@@ -5,7 +5,6 @@ import SCurrentPageLocation from '../sections/SCurrentPageLocation'
 import SProductGrid from '../sections/SProductGrid'
 import { useProductContext } from '../contexts/ProductContext'
 import { ProductContextType } from '../models/productModel'
-import SProductConfig from '../sections/SProductConfig'
 
 const ProductsView: React.FC = () => {
   const { products, getProducts } = useProductContext() as ProductContextType
@@ -18,7 +17,6 @@ const ProductsView: React.FC = () => {
     <>
       <SMainMenu />
       <SCurrentPageLocation currentPage="Products" />
-      <SProductConfig />
       <SProductGrid title="Products" items={products} />
       <SFooter />
     </>

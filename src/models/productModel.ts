@@ -9,6 +9,10 @@ export interface ProductContextType {
     getFeaturedProducts: (take?: number) => void
     getTwoForProducts: (take?: number) => void
     getTopProducts: (take?: number) => void
+    createProduct: (e: React.FormEvent) => void
+    updateProduct: (e: React.FormEvent) => void
+    deleteProduct: (articleNumber: string) => void
+    productRequest: ProductRequest
 }
 
 export interface ProductFormType {
@@ -16,21 +20,19 @@ export interface ProductFormType {
     setProduct: React.Dispatch<React.SetStateAction<Product>>
     products: Product[]
     setProducts: React.Dispatch<React.SetStateAction<Product[]>>
-    productRequest: ProductRequest
-    setProductRequest: React.Dispatch<React.SetStateAction<ProductRequest>>
     createProduct: (e: React.FormEvent) => void
     updateProduct: (e: React.FormEvent) => void
     removeProduct: (articleNumber: string) => void
 }
 
 export interface Product {
-    articleNumber: string;
+    articleNumber: string
     tag: string
-    imageName: string;
+    imageName: string
     description: string
-    name: string;
-    category: string;
-    price: number;
+    name: string
+    category: string
+    price: number
 }
 
 export interface ProductRequest {
@@ -44,21 +46,10 @@ export interface ProductRequest {
 
 export interface ProductConfigType {
     tag: string
-    imageName: string;
+    imageName: string
     description: string
-    name: string;
-    category: string;
-    price: number;
-    rating: number;
-}
-
-
-
-export interface CartItem {
-    imageName: string;
-    name: string;
-    articleNumber: string;
-    category: string;
-    price: number;
-    quantity: number;
+    name: string
+    category: string
+    price: number
+    rating: number
 }

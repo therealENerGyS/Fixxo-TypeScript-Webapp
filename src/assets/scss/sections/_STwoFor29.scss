@@ -5,27 +5,27 @@
     flex-direction: column;
     @include lg {
       flex-direction: row;
-      height: 660px;
       gap: 30px;
+      height: 660px;
     }
     .two-for {
       @include center-content();
-      padding: 2rem 0;
       background-color: #bbbbbb;
-      height: 100%;
-      width: 100%;
       color: $color-white;
       flex-direction: column;
-      text-align: center;
+      height: 100%;
       margin-bottom: 1rem;
+      padding: 2rem 0;
+      text-align: center;
+      width: 100%;
       @include lg {
         margin-bottom: 0;
         padding: 0;
       }
       .two-for-header {
-        padding: 0 1rem;
         font-size: $font-size-45;
         font-weight: $font-weight-bold;
+        padding: 0 1rem;
         @include lg {
           padding: 0;
         }
@@ -34,15 +34,16 @@
     .grid-two-for {
       display: flex;
       column-gap: 2.5rem;
-      justify-content: flex-start;
       flex-direction: column;
+      justify-content: flex-start;
+
       @include md {
+        display: grid;
         grid-template-columns: repeat(2, minmax(100px, 15rem));
         grid-template-rows: repeat(2, minmax(100px, 1fr));
-        display: grid;
         height: 100%;
-        width: 100%;
         padding: 0;
+        width: 100%;
       }
       @include lg {
         padding-top: 0;
@@ -51,9 +52,9 @@
         height: 100%;
         padding: 0.4rem 0;
         .product-info {
+          align-items: flex-start;
           display: flex;
           flex-direction: column;
-          align-items: flex-start;
           justify-content: center;
           .product-category {
             color: $color-muted;

@@ -1,11 +1,8 @@
 .product-discount-section {
     ._container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include center-content();
         .discount-link {
             text-decoration: none;
-
             .discount-text {
                 color: $color-secondary;
                 font-size: $font-size-16;

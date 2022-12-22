@@ -1,5 +1,4 @@
-import React from "react";
-import { NavLink } from 'react-router-dom'
+import React from "react"
 
 interface ISpecial {
   title: string
@@ -14,7 +13,7 @@ const CSpeciality: React.FC<ISpecial> = ({title}) => {
       </div>
       <div className="specials-graybox"></div>
     </div>
-  );
-};
+  )
+}
 
-export default CSpeciality;
+export default CSpeciality

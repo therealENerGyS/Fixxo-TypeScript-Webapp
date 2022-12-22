@@ -50,7 +50,7 @@ const SContactForm: React.FC = () => {
           body: JSON.stringify(form)
         })
 
-        if (res.status === 200) {
+        if (res.status === 200 || res.status === 201) {
           setSubmitted(true)
           setForm(DEFAULT_VALUES)
         } else {

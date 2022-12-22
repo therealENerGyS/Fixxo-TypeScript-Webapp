@@ -1,12 +1,12 @@
-import React from "react";
-import CProductCard from "../components/CProductCard";
-import { Product } from "../models/productModel";
+import React from "react"
+import CProductCard from "../components/CProductCard"
+import { Product } from "../models/productModel"
 
-interface IProductGridProps {
+interface IProductGridType {
   items: Product[]
 }
 
-const STwoFor29: React.FC<IProductGridProps> = ({items}) => {
+const STwoFor29: React.FC<IProductGridType> = ({items}) => {
   return (
     <section className="two-for-deal-29">
       <div className="_container">
@@ -23,7 +23,7 @@ const STwoFor29: React.FC<IProductGridProps> = ({items}) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default STwoFor29;
+export default STwoFor29

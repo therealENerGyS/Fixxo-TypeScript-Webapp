@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 interface LocationType {
@@ -24,4 +24,4 @@ const SCurrentPageLocation: React.FC<LocationType> = ({ currentPage, parentPage 
   )
 }
 
-export default SCurrentPageLocation;
+export default SCurrentPageLocation

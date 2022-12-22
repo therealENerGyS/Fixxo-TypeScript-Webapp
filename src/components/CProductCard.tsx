@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import { NavLink } from 'react-router-dom'
 import { ShoppingCartContextType, useShoppingCartContext } from "../contexts/ShoppingCartContext"
 import { currencyFormatter } from '../utilities/currencyFormatter'
@@ -38,7 +38,7 @@ const CProductCard: React.FC<ProductCardType> = ({item}) => {
           <p className="price">{currencyFormatter(item.price)}</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CProductCard;
+export default CProductCard

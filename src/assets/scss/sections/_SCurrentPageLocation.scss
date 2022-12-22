@@ -1,13 +1,12 @@
 .current-page-location {
     padding: 0.5rem 0;
     ._container {
-        padding: 0 2rem;
         @include center-content();
+        padding: 0 2rem;
         .location-text {
+            color: $color-primary;
             list-style: none;
             padding: 0;
-            color: $color-primary;
-
             @include md {
                 width: 95%;
             }
@@ -22,19 +21,19 @@
             }
             li {
                 display: inline-block;
-                font-weight: $font-weight-medium;
                 color: $color-secondary;
+                font-weight: $font-weight-medium;
                 a {
-                    text-decoration: none;
                     color: $color-primary;
+                    text-decoration: none;
                     &:hover {
                         color: $color-secondary;
                     }
                 }
-                & + li:before {
+                &+li:before {
+                    color: $color-primary;
                     content: "\00a0>\00a0";
                     font-weight: $font-weight-regular;
-                    color: $color-primary;
                 }
             }
         }

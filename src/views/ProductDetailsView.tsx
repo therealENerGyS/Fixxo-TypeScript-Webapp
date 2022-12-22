@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
-import { useParams } from 'react-router-dom';
+import React, { useEffect } from "react"
+import { useParams } from 'react-router-dom'
 import { useProductContext } from '../contexts/ProductContext'
-import { ProductContextType } from "../models/productModel";
-import SCurrentPageLocation from "../sections/SCurrentPageLocation";
-import SFooter from "../sections/SFooter";
-import SMainMenu from "../sections/SMainMenu";
-import SProductDiscount from "../sections/SProductDiscount";
-import SProductDetails from "../sections/SProductDetails";
+import { ProductContextType } from "../models/productModel"
+import SCurrentPageLocation from "../sections/SCurrentPageLocation"
+import SFooter from "../sections/SFooter"
+import SMainMenu from "../sections/SMainMenu"
+import SProductDiscount from "../sections/SProductDiscount"
+import SProductDetails from "../sections/SProductDetails"
 
 const ProductDetailsView: React.FC = () => {
   const { id } = useParams<string>()
@@ -24,7 +24,7 @@ const ProductDetailsView: React.FC = () => {
       <SProductDetails item={productContext.product} />
       <SFooter />
     </>
-  );
-};
+  )
+}
 
-export default ProductDetailsView;
+export default ProductDetailsView

@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const SMap: React.FC = () => {
   return (
@@ -6,4 +6,4 @@ const SMap: React.FC = () => {
   )
 }
 
-export default SMap;
+export default SMap

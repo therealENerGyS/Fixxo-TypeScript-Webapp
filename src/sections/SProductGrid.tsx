@@ -2,12 +2,12 @@ import React from 'react'
 import CProductCard from '../components/CProductCard'
 import { Product } from '../models/productModel'
 
-interface ProductGridProps {
+interface ProductGridType {
   title: string
   items: Product[]
 }
 
-const SProductGrid: React.FC<ProductGridProps> = ({title, items})  => {
+const SProductGrid: React.FC<ProductGridType> = ({title, items})  => {
 
   return (
     <section className="product-grid">

@@ -1,11 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import './assets/css/style.min.css'
+import './assets/css/style.css'
 import HomeView from './views/HomeView'
 import ProductsView from './views/ProductsView'
 import ContactsView from './views/ContactsView'
 import NotFoundView from './views/NotFoundView'
-import ShoppingCartView from './views/ShoppingCartView'
 import ProductDetailsView from './views/ProductDetailsView'
 import ProductProvider from './contexts/ProductContext'
 import { ShoppingCartProvider } from './contexts/ShoppingCartContext'
@@ -20,13 +19,12 @@ function App() {
             <Route path='/products' element={<ProductsView />} />
             <Route path='/products/:name' element={<ProductDetailsView />} />
             <Route path='/contacts' element={<ContactsView />} />
-            <Route path='/shopping-cart' element={<ShoppingCartView />} />
             <Route path='*' element={<NotFoundView />} />
           </Routes>
         </ProductProvider>
       </ShoppingCartProvider>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App
